@@ -1,18 +1,224 @@
 {
-  "usuarios": [
+  "filmes": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": 1,
+      "titulo": "Inception",
+      "descricaoCurta": "Um ladrão especializado em roubar segredos do subconsciente humano recebe a missão impossível de plantar uma ideia na mente de um empresário.",
+      "descricaoCompleta": "Dom Cobb (Leonardo DiCaprio) é o melhor no que faz: invadir os sonhos das pessoas para roubar os segredos do subconsciente. Essa habilidade rara o tornou um fugitivo internacional e fez com que ele perdesse tudo o que amava. Agora ele recebe uma chance de redenção: em vez de roubar uma ideia, ele precisa plantá-la. Se conseguir realizar o 'inception', isso pode ser o crime perfeito. Mas seus assistentes, por mais hábeis que sejam, nunca planejaram nada assim.",
+      "imagem": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+      "categoria": "Ficção Científica",
+      "nota": 8.8,
+      "tags": ["Ficção Científica", "Ação", "Christopher Nolan", "Sonhos"],
+      "destaque": true,
+      "ano": 2010,
+      "diretor": "Christopher Nolan",
+      "duracao": "148 min",
+      "classificacao": "12 anos",
+      "elenco": [
+        { "id": 1, "nome": "Leonardo DiCaprio", "personagem": "Dom Cobb", "nacionalidade": "Americano", "nascimento": "1974", "premiacao": "Oscar de Melhor Ator (2016)", "imagem": "https://image.tmdb.org/t/p/w500/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg" },
+        { "id": 2, "nome": "Joseph Gordon-Levitt", "personagem": "Arthur", "nacionalidade": "Americano", "nascimento": "1981", "premiacao": "Saturn Award (2011)", "imagem": "https://image.tmdb.org/t/p/w500/msugySeTCyCVUvMz5a9hh3JMhEm.jpg" },
+        { "id": 3, "nome": "Elliot Page", "personagem": "Ariadne", "nacionalidade": "Canadense", "nascimento": "1987", "premiacao": "Oscar de Melhor Filme (indicação)", "imagem": "https://image.tmdb.org/t/p/w500/isSCJFLMy1UZtDxqLpFGMhCGnFO.jpg" },
+        { "id": 4, "nome": "Tom Hardy", "personagem": "Eames", "nacionalidade": "Britânico", "nascimento": "1977", "premiacao": "BAFTA - Melhor Ator Coadjuvante (2016)", "imagem": "https://image.tmdb.org/t/p/w500/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg" }
+      ]
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": 2,
+      "titulo": "O Poderoso Chefão",
+      "descricaoCurta": "A história da família Corleone, uma das mais poderosas famílias da máfia americana, e a transformação de Michael Corleone.",
+      "descricaoCompleta": "O patriarca envelhecido de uma dinastia do crime organizado transfere o controle de seu império clandestino para seu filho relutante. A saga da família Corleone é um retrato épico da América do século XX, explorando temas de poder, família, lealdade e traição em uma narrativa que se tornou referência do cinema mundial.",
+      "imagem": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsLeMLoG2N3AQ.jpg",
+      "categoria": "Drama",
+      "nota": 9.2,
+      "tags": ["Drama", "Crime", "Francis Ford Coppola", "Máfia"],
+      "destaque": true,
+      "ano": 1972,
+      "diretor": "Francis Ford Coppola",
+      "duracao": "175 min",
+      "classificacao": "16 anos",
+      "elenco": [
+        { "id": 1, "nome": "Marlon Brando", "personagem": "Vito Corleone", "nacionalidade": "Americano", "nascimento": "1924", "premiacao": "Oscar de Melhor Ator (1973)", "imagem": "https://image.tmdb.org/t/p/w500/fuTEPMsBtV1zE98ujPONbKiYDc2.jpg" },
+        { "id": 2, "nome": "Al Pacino", "personagem": "Michael Corleone", "nacionalidade": "Americano", "nascimento": "1940", "premiacao": "Oscar de Melhor Ator (1993)", "imagem": "https://image.tmdb.org/t/p/w500/2RNjJxHtkNOiXKSEfOPFHqwJORc.jpg" },
+        { "id": 3, "nome": "James Caan", "personagem": "Sonny Corleone", "nacionalidade": "Americano", "nascimento": "1940", "premiacao": "Oscar de Melhor Ator Coadjuvante (indicação)", "imagem": "https://image.tmdb.org/t/p/w500/iueMRCJLKhQUQkJLHEP0OHvnhHu.jpg" },
+        { "id": 4, "nome": "Diane Keaton", "personagem": "Kay Adams", "nacionalidade": "Americana", "nascimento": "1946", "premiacao": "Oscar de Melhor Atriz (1978)", "imagem": "https://image.tmdb.org/t/p/w500/hCL9Cm0GiDiUKmqhStJLNpqJhFZ.jpg" }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Pulp Fiction",
+      "descricaoCurta": "Histórias entrelaçadas de criminosos, pistoleiros, a esposa de um gângster, um boxeador e um par de bandidos de lanchonete.",
+      "descricaoCompleta": "Através de histórias não-lineares que se entrecruzam, o filme acompanha dois assassinos contratados que filosofam sobre a vida entre missões, a esposa de um poderoso chefão do crime, um lutador que vai contra um resultado combinado, e dois amadores que tentam assaltar uma lanchonete.",
+      "imagem": "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+      "categoria": "Crime",
+      "nota": 8.9,
+      "tags": ["Crime", "Drama", "Quentin Tarantino", "Não-linear"],
+      "destaque": false,
+      "ano": 1994,
+      "diretor": "Quentin Tarantino",
+      "duracao": "154 min",
+      "classificacao": "18 anos",
+      "elenco": [
+        { "id": 1, "nome": "John Travolta", "personagem": "Vincent Vega", "nacionalidade": "Americano", "nascimento": "1954", "premiacao": "Globo de Ouro - Melhor Ator (indicação)", "imagem": "https://image.tmdb.org/t/p/w500/oTB9vGIBacH5aQNS0pUM74QSWuf.jpg" },
+        { "id": 2, "nome": "Samuel L. Jackson", "personagem": "Jules Winnfield", "nacionalidade": "Americano", "nascimento": "1948", "premiacao": "BAFTA - Melhor Ator Coadjuvante (1995)", "imagem": "https://image.tmdb.org/t/p/w500/nCJJ3NVksYNxIzEHcyC1XziwXQG.jpg" },
+        { "id": 3, "nome": "Uma Thurman", "personagem": "Mia Wallace", "nacionalidade": "Americana", "nascimento": "1970", "premiacao": "Globo de Ouro - Melhor Atriz (1995)", "imagem": "https://image.tmdb.org/t/p/w500/bhNGGKFIl3ZaNHqiI4oy1FLJFob.jpg" },
+        { "id": 4, "nome": "Bruce Willis", "personagem": "Butch Coolidge", "nacionalidade": "Americano", "nascimento": "1955", "premiacao": "MTV Movie Award - Melhor Cena de Ação", "imagem": "https://image.tmdb.org/t/p/w500/kI1OluWhLJk3pnR3L0bsk8x4iAL.jpg" }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Interstellar",
+      "descricaoCurta": "Uma equipe de exploradores viaja por um buraco de minhoca no espaço na tentativa de garantir a sobrevivência da humanidade.",
+      "descricaoCompleta": "Com a Terra ameaçada por pragas e escassez de alimentos, o ex-piloto da NASA Cooper (Matthew McConaughey) embarca em uma missão de tirar o fôlego além de nossa galáxia. Juntando-se a uma equipe de cientistas que viaja por um buraco de minhoca recém-descoberto, Cooper pode garantir a sobrevivência da humanidade e também voltar para casa.",
+      "imagem": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      "categoria": "Ficção Científica",
+      "nota": 8.6,
+      "tags": ["Ficção Científica", "Drama", "Christopher Nolan", "Espaço"],
+      "destaque": true,
+      "ano": 2014,
+      "diretor": "Christopher Nolan",
+      "duracao": "169 min",
+      "classificacao": "10 anos",
+      "elenco": [
+        { "id": 1, "nome": "Matthew McConaughey", "personagem": "Cooper", "nacionalidade": "Americano", "nascimento": "1969", "premiacao": "Oscar de Melhor Ator (2014)", "imagem": "https://image.tmdb.org/t/p/w500/wJiGedOCZhwMx9DezY8uwbNxmAY.jpg" },
+        { "id": 2, "nome": "Anne Hathaway", "personagem": "Dra. Brand", "nacionalidade": "Americana", "nascimento": "1982", "premiacao": "Oscar de Melhor Atriz Coadjuvante (2013)", "imagem": "https://image.tmdb.org/t/p/w500/tLelKoPNiyJCSEJFFkCCNGk9ThE.jpg" },
+        { "id": 3, "nome": "Jessica Chastain", "personagem": "Murph (adulta)", "nacionalidade": "Americana", "nascimento": "1977", "premiacao": "Oscar de Melhor Atriz (2023)", "imagem": "https://image.tmdb.org/t/p/w500/y4f0KGFSEfWTRMxlZvMN7CGNLBI.jpg" },
+        { "id": 4, "nome": "Michael Caine", "personagem": "Prof. Brand", "nacionalidade": "Britânico", "nascimento": "1933", "premiacao": "Oscar de Melhor Ator Coadjuvante (1987)", "imagem": "https://image.tmdb.org/t/p/w500/zMa7GUo5G8D89nFDqIQSMqo3wWi.jpg" }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Clube da Luta",
+      "descricaoCurta": "Um homem insatisfeito e sem nome cria um clube de luta clandestino com um vendedor de sabão carismático e perturbado.",
+      "descricaoCompleta": "O narrador sem nome (Edward Norton) é um trabalhador de escritório insatisfeito que sofre de insônia. Ele se encontra com Tyler Durden (Brad Pitt), um vendedor de sabão carismático que vive segundo seus próprios princípios. Os dois formam um clube de luta underground que vai evoluir para algo muito mais perigoso. Uma crítica mordaz à sociedade consumista e à masculinidade.",
+      "imagem": "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+      "categoria": "Drama",
+      "nota": 8.8,
+      "tags": ["Drama", "Thriller", "David Fincher", "Sociedade"],
+      "destaque": false,
+      "ano": 1999,
+      "diretor": "David Fincher",
+      "duracao": "139 min",
+      "classificacao": "18 anos",
+      "elenco": [
+        { "id": 1, "nome": "Brad Pitt", "personagem": "Tyler Durden", "nacionalidade": "Americano", "nascimento": "1963", "premiacao": "Oscar de Melhor Ator Coadjuvante (2020)", "imagem": "https://image.tmdb.org/t/p/w500/cckcYc2v0yh1tc9QjRelptcOBko.jpg" },
+        { "id": 2, "nome": "Edward Norton", "personagem": "Narrador", "nacionalidade": "Americano", "nascimento": "1969", "premiacao": "Oscar de Melhor Ator Coadjuvante (1997)", "imagem": "https://image.tmdb.org/t/p/w500/5XBzD5WuTyVQZeS4VI25z2moMeY.jpg" },
+        { "id": 3, "nome": "Helena Bonham Carter", "personagem": "Marla Singer", "nacionalidade": "Britânica", "nascimento": "1966", "premiacao": "BAFTA - Melhor Atriz Coadjuvante (2011)", "imagem": "https://image.tmdb.org/t/p/w500/4mZQbCzdqvEO0KPSO0Lf7GpoQ20.jpg" }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Parasita",
+      "descricaoCurta": "A família de Ki-taek é desempregada, mas quando o filho consegue emprego como professor particular em uma casa rica, criam um esquema de infiltração.",
+      "descricaoCompleta": "A família Kim — pai, mãe, filho e filha — está totalmente desempregada, habitando um apartamento semi-subterrâneo precário. Um dia, o amigo de Ki-woo parte para o exterior e recomenda que o rapaz trabalhe como professor particular de inglês para a filha da rica família Park. Com um diploma universitário falsificado, Ki-woo começa o emprego. Assim começa uma improvável conexão entre as duas famílias.",
+      "imagem": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "categoria": "Thriller",
+      "nota": 8.5,
+      "tags": ["Thriller", "Drama", "Bong Joon-ho", "Classe social"],
+      "destaque": true,
+      "ano": 2019,
+      "diretor": "Bong Joon-ho",
+      "duracao": "132 min",
+      "classificacao": "16 anos",
+      "elenco": [
+        { "id": 1, "nome": "Song Kang-ho", "personagem": "Ki-taek", "nacionalidade": "Sul-coreano", "nascimento": "1967", "premiacao": "Cannes - Palma de Ouro (elenco 2019)", "imagem": "https://image.tmdb.org/t/p/w500/2lcUBMHBfNgXOjH5fHdMYfFPEIP.jpg" },
+        { "id": 2, "nome": "Lee Sun-kyun", "personagem": "Dong-ik Park", "nacionalidade": "Sul-coreano", "nascimento": "1975", "premiacao": "Grand Bell Award - Melhor Ator", "imagem": "https://image.tmdb.org/t/p/w500/byDPPuFAmFw2aCr3oVvHbB5Kgag.jpg" },
+        { "id": 3, "nome": "Cho Yeo-jeong", "personagem": "Yeon-kyo Park", "nacionalidade": "Sul-coreana", "nascimento": "1981", "premiacao": "Grand Bell Award - Melhor Atriz", "imagem": "https://image.tmdb.org/t/p/w500/i69RtHXQ7fQDnGWMNMiJHBV1tKE.jpg" },
+        { "id": 4, "nome": "Choi Woo-shik", "personagem": "Ki-woo", "nacionalidade": "Sul-coreano", "nascimento": "1990", "premiacao": "Critics Choice Award - Melhor Elenco", "imagem": "https://image.tmdb.org/t/p/w500/kcOJHBKdqfZXfXNJxHGNcwJ3MuP.jpg" }
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Matrix",
+      "descricaoCurta": "Um hacker descobre que a realidade em que vive é uma simulação controlada por máquinas e se junta a uma resistência para libertar a humanidade.",
+      "descricaoCompleta": "Thomas Anderson leva uma vida dupla: de dia é um programador comum, à noite é o hacker Neo. Ao ser contatado pela misteriosa Trinity e pelo enigmático Morpheus, Neo descobre a verdade chocante sobre a Matrix — uma simulação de computador criada por máquinas para manter a humanidade sob controle enquanto seus corpos são usados como fonte de energia. Neo precisa decidir se está pronto para lutar pela liberdade da humanidade.",
+      "imagem": "https://picsum.photos/seed/matrix1999/500/750",
+      "categoria": "Ficção Científica",
+      "nota": 8.7,
+      "tags": ["Ficção Científica", "Ação", "Lana Wachowski", "Realidade simulada"],
+      "destaque": true,
+      "ano": 1999,
+      "diretor": "Lana e Lilly Wachowski",
+      "duracao": "136 min",
+      "classificacao": "14 anos",
+      "elenco": [
+        { "id": 1, "nome": "Keanu Reeves", "personagem": "Neo", "nacionalidade": "Canadense", "nascimento": "1964", "premiacao": "MTV Movie Award - Melhor Ator (2000)", "imagem": "https://picsum.photos/seed/keanureeves/500/700" },
+        { "id": 2, "nome": "Laurence Fishburne", "personagem": "Morpheus", "nacionalidade": "Americano", "nascimento": "1961", "premiacao": "Saturn Award - Melhor Ator Coadjuvante", "imagem": "https://picsum.photos/seed/laurencefishburne/500/700" },
+        { "id": 3, "nome": "Carrie-Anne Moss", "personagem": "Trinity", "nacionalidade": "Canadense", "nascimento": "1967", "premiacao": "Saturn Award - Melhor Atriz (indicação)", "imagem": "https://picsum.photos/seed/carrieannemoss/500/700" }
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Cidade de Deus",
+      "descricaoCurta": "A trajetória de jovens moradores da Cidade de Deus, favela do Rio de Janeiro, ao longo de duas décadas marcadas pela violência e pelo crime.",
+      "descricaoCompleta": "Narrado por Buscapé, um jovem que sonha em ser fotógrafo, o filme acompanha a ascensão e a queda de diversos personagens ligados ao crime organizado na Cidade de Deus, entre as décadas de 1960 e 1980. Um retrato cru e visceral da desigualdade social e da violência urbana no Brasil, contado com uma linguagem visual inovadora.",
+      "imagem": "https://picsum.photos/seed/cidadedeus2002/500/750",
+      "categoria": "Drama",
+      "nota": 8.6,
+      "tags": ["Drama", "Crime", "Fernando Meirelles", "Brasil"],
+      "destaque": false,
+      "ano": 2002,
+      "diretor": "Fernando Meirelles",
+      "duracao": "130 min",
+      "classificacao": "16 anos",
+      "elenco": [
+        { "id": 1, "nome": "Alexandre Rodrigues", "personagem": "Buscapé", "nacionalidade": "Brasileiro", "nascimento": "1983", "premiacao": "Prêmio Grande Otelo - Melhor Ator", "imagem": "https://picsum.photos/seed/alexandrerodrigues/500/700" },
+        { "id": 2, "nome": "Leandro Firmino", "personagem": "Zé Pequeno", "nacionalidade": "Brasileiro", "nascimento": "1978", "premiacao": "Prêmio Grande Otelo - Melhor Ator Coadjuvante", "imagem": "https://picsum.photos/seed/leandrofirmino/500/700" },
+        { "id": 3, "nome": "Seu Jorge", "personagem": "Mané Galinha", "nacionalidade": "Brasileiro", "nascimento": "1970", "premiacao": "Indicação ao BAFTA de Melhor Filme Estrangeiro", "imagem": "https://picsum.photos/seed/seujorge/500/700" }
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+      "descricaoCurta": "Um hobbit recebe a missão de destruir um anel amaldiçoado capaz de dar poder absoluto ao Senhor do Escuro Sauron.",
+      "descricaoCompleta": "Na Terra-média, o jovem hobbit Frodo Bolseiro herda o Um Anel, um artefato de imenso poder criado pelo sombrio Sauron. Para impedir que o anel caia em mãos erradas, Frodo parte em uma jornada épica acompanhado por uma sociedade de nove membros — homens, elfos, anões e hobbits — rumo à Montanha da Perdição, o único lugar onde o anel pode ser destruído.",
+      "imagem": "https://picsum.photos/seed/senhordosaneis2001/500/750",
+      "categoria": "Fantasia",
+      "nota": 8.8,
+      "tags": ["Fantasia", "Aventura", "Peter Jackson", "Épico"],
+      "destaque": true,
+      "ano": 2001,
+      "diretor": "Peter Jackson",
+      "duracao": "178 min",
+      "classificacao": "12 anos",
+      "elenco": [
+        { "id": 1, "nome": "Elijah Wood", "personagem": "Frodo Bolseiro", "nacionalidade": "Americano", "nascimento": "1981", "premiacao": "Saturn Award - Melhor Ator", "imagem": "https://picsum.photos/seed/elijahwood/500/700" },
+        { "id": 2, "nome": "Ian McKellen", "personagem": "Gandalf", "nacionalidade": "Britânico", "nascimento": "1939", "premiacao": "Oscar de Melhor Ator Coadjuvante (indicação)", "imagem": "https://picsum.photos/seed/ianmckellen/500/700" },
+        { "id": 3, "nome": "Viggo Mortensen", "personagem": "Aragorn", "nacionalidade": "Americano-dinamarquês", "nascimento": "1958", "premiacao": "Screen Actors Guild Award - Melhor Elenco", "imagem": "https://picsum.photos/seed/viggomortensen/500/700" }
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Bacurau",
+      "descricaoCurta": "Um pequeno vilarejo no sertão brasileiro desaparece do mapa e passa a ser alvo de forasteiros com intenções violentas.",
+      "descricaoCompleta": "Dias após a morte de Carmelita, seus moradores testemunham fenômenos estranhos: o vilarejo de Bacurau desaparece dos mapas e sofre com a falta de água. Simultaneamente, um grupo de forasteiros liderado por um caçador estrangeiro chega à região com um plano sinistro. Os moradores precisam se unir para proteger sua terra e sua gente contra a ameaça iminente.",
+      "imagem": "https://picsum.photos/seed/bacurau2019/500/750",
+      "categoria": "Suspense",
+      "nota": 7.8,
+      "tags": ["Suspense", "Ficção Científica", "Kleber Mendonça Filho", "Brasil"],
+      "destaque": false,
+      "ano": 2019,
+      "diretor": "Kleber Mendonça Filho e Juliano Dornelles",
+      "duracao": "132 min",
+      "classificacao": "18 anos",
+      "elenco": [
+        { "id": 1, "nome": "Sônia Braga", "personagem": "Domingas", "nacionalidade": "Brasileira", "nascimento": "1950", "premiacao": "Indicação ao Independent Spirit Award", "imagem": "https://picsum.photos/seed/soniabraga/500/700" },
+        { "id": 2, "nome": "Udo Kier", "personagem": "Michael", "nacionalidade": "Alemão", "nascimento": "1944", "premiacao": "Indicação ao Prêmio Robert - Melhor Ator", "imagem": "https://picsum.photos/seed/udokier/500/700" },
+        { "id": 3, "nome": "Barbara Colen", "personagem": "Teresa", "nacionalidade": "Brasileira", "nascimento": "1985", "premiacao": "Prêmio APCA - Melhor Atriz", "imagem": "https://picsum.photos/seed/barbaracolen/500/700" }
+      ]
     }
-  ]
+  ],
+  "categorias": [
+    { "id": 1, "nome": "Ficção Científica" },
+    { "id": 2, "nome": "Drama" },
+    { "id": 3, "nome": "Crime" },
+    { "id": 4, "nome": "Thriller" },
+    { "id": 5, "nome": "Fantasia" },
+    { "id": 6, "nome": "Suspense" }
+  ],
+  "comentarios": [
+    { "id": 1, "filmeId": 1, "autor": "Marcos Vinícius", "texto": "Um dos filmes mais bem construídos que já vi, a trilha sonora do Hans Zimmer é sensacional.", "nota": 9 },
+    { "id": 2, "filmeId": 1, "autor": "Ana Paula", "texto": "Precisei assistir duas vezes para entender tudo, mas valeu muito a pena.", "nota": 8 },
+    { "id": 3, "filmeId": 6, "autor": "Rafael Souza", "texto": "Roteiro brilhante e cheio de camadas, merece todos os prêmios que ganhou.", "nota": 10 },
+    { "id": 4, "filmeId": 9, "autor": "Juliana Costa", "texto": "A fotografia da Terra-média é de tirar o fôlego, um clássico atemporal.", "nota": 9 }
+  ],
+  "favoritos": [1, 4, 6, 9]
 }

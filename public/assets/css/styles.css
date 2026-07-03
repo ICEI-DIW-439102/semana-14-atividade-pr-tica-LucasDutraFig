@@ -1,0 +1,779 @@
+/* ============================================================
+   CineWorld — styles.css
+   Paleta: Preto profundo #0a0a0f | Vermelho cinema #e50914
+   Creme #f5f0e8 | Cinza escuro #1a1a24 | Dourado #c9a227
+   Fonte display: Bebas Neue | Corpo: Inter
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --preto:    #0a0a0f;
+  --escuro:   #1a1a24;
+  --medio:    #2a2a38;
+  --vermelho: #e50914;
+  --dourado:  #c9a227;
+  --creme:    #f5f0e8;
+  --cinza:    #9090a0;
+  --branco:   #ffffff;
+}
+
+/* Reset & base */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--preto);
+  color: var(--creme);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+.navbar-cine {
+  background: rgba(10, 10, 15, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(229, 9, 20, 0.3);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: var(--branco);
+}
+
+.navbar-brand-logo span {
+  color: var(--vermelho);
+}
+
+.nav-link-cine {
+  color: var(--cinza) !important;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 6px 14px !important;
+  transition: color 0.2s;
+}
+.nav-link-cine:hover, .nav-link-cine.active { color: var(--branco) !important; }
+
+.navbar-toggler { border-color: rgba(229,9,20,0.4); }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28229,9,20,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ============================================================
+   SLIDER / CARROSSEL
+   ============================================================ */
+#carouselDestaques { margin-bottom: 0; }
+
+.slide-bg {
+  width: 100%;
+  height: 560px;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
+
+.slide-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10,10,15,0.95) 0%,
+    rgba(10,10,15,0.7) 55%,
+    rgba(10,10,15,0.2) 100%
+  );
+}
+
+.carousel-caption-custom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 50%;
+  padding: 48px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  z-index: 2;
+}
+
+.badge-genero {
+  display: inline-block;
+  width: fit-content;
+  background: var(--vermelho);
+  color: var(--branco);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+.carousel-caption-custom h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  letter-spacing: 2px;
+  line-height: 1.1;
+  color: var(--branco);
+}
+
+.carousel-caption-custom p {
+  color: rgba(245,240,232,0.8);
+  font-size: 14px;
+  line-height: 1.65;
+  max-width: 420px;
+}
+
+.slide-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--cinza);
+}
+
+.slide-meta i { margin-right: 4px; }
+.slide-meta .estrelas { color: var(--dourado); }
+.slide-meta .estrelas i { font-size: 12px; }
+
+.btn-ver {
+  display: inline-block;
+  margin-top: 6px;
+  background: var(--vermelho);
+  color: var(--branco);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 11px 28px;
+  border-radius: 2px;
+  width: fit-content;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-ver:hover { background: #c0070f; color: var(--branco); transform: translateY(-1px); }
+
+/* Controles do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 48px;
+  height: 48px;
+  background: rgba(229,9,20,0.8);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+.carousel-control-prev { left: 20px; }
+.carousel-control-next { right: 20px; }
+.carousel-control-prev:hover,
+.carousel-control-next:hover { background: var(--vermelho); }
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--vermelho);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  opacity: 0.4;
+}
+.carousel-indicators .active { opacity: 1; }
+
+/* ============================================================
+   SEÇÃO TÍTULOS
+   ============================================================ */
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: var(--branco);
+  line-height: 1;
+}
+
+.section-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, rgba(229,9,20,0.5), transparent);
+}
+
+.secao-filmes {
+  background: var(--preto);
+  padding: 64px 0;
+}
+
+/* ============================================================
+   CARDS DE FILMES
+   ============================================================ */
+.card-filme {
+  background: var(--escuro);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+  height: 100%;
+}
+
+.card-filme:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(229, 9, 20, 0.2);
+}
+
+.card-poster {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+}
+
+.card-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.card-filme:hover .card-poster img { transform: scale(1.05); }
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10,10,15,0.0);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 12px;
+  transition: background 0.3s;
+}
+
+.card-filme:hover .card-overlay { background: rgba(10,10,15,0.3); }
+
+.overlay-nota {
+  background: var(--dourado);
+  color: var(--preto);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+.overlay-nota i { margin-right: 3px; }
+
+.card-info {
+  padding: 18px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.card-genero {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--vermelho);
+}
+
+.card-info h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  color: var(--branco);
+}
+
+.card-info h3 a:hover { color: var(--vermelho); }
+
+.card-desc {
+  font-size: 13px;
+  color: var(--cinza);
+  line-height: 1.55;
+}
+
+.card-footer-meta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--cinza);
+  margin-top: 4px;
+}
+.card-footer-meta i { margin-right: 4px; color: var(--vermelho); }
+
+/* ============================================================
+   SEÇÃO SOBRE
+   ============================================================ */
+.secao-sobre {
+  background: var(--escuro);
+  padding: 64px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.sobre-card {
+  background: var(--medio);
+  border-radius: 8px;
+  padding: 36px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.sobre-avatar {
+  width: 80px;
+  height: 80px;
+  background: var(--vermelho);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  color: var(--branco);
+  flex-shrink: 0;
+}
+
+.sobre-info h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: var(--branco);
+  margin-bottom: 4px;
+}
+
+.sobre-info p {
+  color: var(--cinza);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.sobre-info .badge-curso {
+  display: inline-block;
+  background: rgba(229,9,20,0.15);
+  color: var(--vermelho);
+  border: 1px solid rgba(229,9,20,0.3);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer-cine {
+  background: #060608;
+  padding: 28px 0;
+  border-top: 1px solid rgba(229,9,20,0.2);
+  text-align: center;
+}
+
+.footer-cine p {
+  color: var(--cinza);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.footer-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: var(--branco);
+  margin-bottom: 8px;
+}
+.footer-logo span { color: var(--vermelho); }
+
+/* ============================================================
+   PÁGINA DE DETALHE
+   ============================================================ */
+
+/* Hero */
+.detalhe-hero {
+  position: relative;
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+}
+
+.detalhe-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10,10,15,0.4) 0%,
+    rgba(10,10,15,0.95) 100%
+  );
+}
+
+.detalhe-hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  z-index: 2;
+}
+
+.detalhe-breadcrumb {
+  font-size: 12px;
+  color: var(--cinza);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.detalhe-breadcrumb a { color: var(--vermelho); }
+.detalhe-breadcrumb a:hover { text-decoration: underline; }
+
+#detalheTitulo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: 3px;
+  line-height: 1;
+  color: var(--branco);
+  margin-bottom: 8px;
+}
+
+.detalhe-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.badge-detalhe {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--creme);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+.badge-detalhe i { color: var(--vermelho); }
+
+.detalhe-nota {
+  color: var(--dourado);
+  font-size: 14px;
+  font-weight: 600;
+}
+.detalhe-nota i { margin-right: 3px; }
+
+/* Seção info */
+.secao-info {
+  background: var(--preto);
+  padding: 64px 0;
+}
+
+.info-bloco {
+  background: var(--escuro);
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.info-bloco h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: var(--branco);
+  border-left: 3px solid var(--vermelho);
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.info-item:last-child { border-bottom: none; }
+
+.info-item i {
+  color: var(--vermelho);
+  font-size: 16px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  width: 20px;
+}
+
+.info-label {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--cinza);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.info-valor {
+  font-size: 14px;
+  color: var(--creme);
+  font-weight: 500;
+}
+
+.sinopse-texto {
+  color: rgba(245,240,232,0.8);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Seção elenco */
+.secao-elenco {
+  background: var(--escuro);
+  padding: 64px 0;
+}
+
+.ator-card {
+  background: var(--medio);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.ator-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(229,9,20,0.15);
+}
+
+.ator-foto {
+  height: 220px;
+  overflow: hidden;
+}
+
+.ator-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.4s;
+}
+
+.ator-card:hover .ator-foto img { transform: scale(1.06); }
+
+.ator-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ator-info h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 1.5px;
+  color: var(--branco);
+  line-height: 1.2;
+}
+
+.ator-personagem {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--vermelho);
+}
+.ator-personagem i { margin-right: 4px; }
+
+.ator-detalhe {
+  font-size: 12px;
+  color: var(--cinza);
+}
+.ator-detalhe i { margin-right: 4px; }
+
+.ator-premio {
+  font-size: 11px;
+  color: var(--dourado);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+.ator-premio i { margin-right: 4px; }
+
+/* ============================================================
+   PÁGINA DE GRÁFICOS
+   ============================================================ */
+.secao-graficos-topo {
+  background: linear-gradient(180deg, var(--escuro) 0%, var(--preto) 100%);
+  padding: 56px 0 40px;
+  border-bottom: 1px solid rgba(229, 9, 20, 0.3);
+  text-align: center;
+}
+
+.graficos-eyebrow {
+  color: var(--vermelho);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.graficos-eyebrow i { margin-right: 6px; }
+
+.graficos-titulo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+  color: var(--branco);
+}
+
+.graficos-subtitulo {
+  color: var(--cinza);
+  max-width: 620px;
+  margin: 12px auto 0;
+  font-size: 14px;
+}
+
+.secao-grafico { padding: 48px 0; }
+
+.secao-grafico-alt {
+  background: var(--escuro);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.grafico-legenda {
+  color: var(--cinza);
+  font-size: 13px;
+  margin-bottom: 24px;
+  max-width: 640px;
+}
+
+.grafico-card {
+  background: var(--medio);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 8px;
+  padding: 24px 20px;
+  height: 380px;
+}
+
+@media (max-width: 767px) {
+  .grafico-card { height: 320px; padding: 16px 12px; }
+  .graficos-titulo { font-size: 2rem; }
+}
+
+/* ============================================================
+   RESPONSIVIDADE
+   ============================================================ */
+@media (max-width: 767px) {
+  .slide-bg { height: 420px; }
+
+  .carousel-caption-custom {
+    width: 100%;
+    padding: 24px 20px;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(10,10,15,0.97) 0%, transparent 100%);
+  }
+
+  .carousel-caption-custom p { display: none; }
+
+  .carousel-control-prev { left: 8px; }
+  .carousel-control-next { right: 8px; }
+
+  .sobre-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 28px 20px;
+  }
+
+  .detalhe-hero { height: 360px; }
+
+  #detalheTitulo { font-size: 2.2rem; }
+
+  .ator-foto { height: 180px; }
+}
+
+@media (max-width: 480px) {
+  .slide-bg { height: 340px; }
+  .carousel-caption-custom h2 { font-size: 1.8rem; }
+  .slide-meta { font-size: 11px; gap: 10px; }
+  .section-title { font-size: 1.6rem; }
+}
+
+/* ============================================================
+   ESTADOS: carregando / erro / tags (JSON Server)
+   ============================================================ */
+.mensagem-carregando,
+.mensagem-erro {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+.mensagem-carregando {
+  color: var(--cinza);
+}
+.mensagem-carregando i {
+  display: inline-block;
+  animation: girar 1s linear infinite;
+  margin-right: 6px;
+}
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.mensagem-erro {
+  color: #ff8a80;
+  background: rgba(229, 9, 20, 0.08);
+  border: 1px solid rgba(229, 9, 20, 0.25);
+}
+.mensagem-erro i { margin-right: 6px; }
+.mensagem-erro code {
+  color: var(--dourado);
+  background: rgba(0,0,0,0.25);
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+.btn-ver-card {
+  margin-top: 12px;
+  padding: 9px 18px;
+  font-size: 11px;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.tag-chip {
+  background: rgba(201, 162, 39, 0.12);
+  color: var(--dourado);
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+#detalheErro.mensagem-erro {
+  padding: 60px 24px;
+  font-size: 17px;
+}
